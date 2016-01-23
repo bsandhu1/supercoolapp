@@ -9,7 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var redbg: UIImageView!
+    @IBOutlet weak var coolbg: UIImageView!
+    @IBOutlet weak var uncoolbutton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +25,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func Makemecool(sender: AnyObject) {
+        coolbg.hidden = false
+        redbg.hidden = false
+        uncoolbutton.hidden = true
+    }
 
 }
 
